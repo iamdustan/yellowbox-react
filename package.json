@@ -1,0 +1,22 @@
+{
+  "name": "yellowbox-react",
+  "version": "0.9.0",
+  "description": "YellowBox renders warnings at the bottom of the app being developed.",
+  "main": "lib/index.js",
+  "esnext:main": "index.js",
+  "scripts": {
+    "test": "flow",
+    "prepublish": "babel index.js -o lib/index.js"
+  },
+  "author": "Dustan Kasten <dustan.kasten@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.2.0",
+    "babel-plugin-transform-class-properties": "^6.3.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18"
+  },
+  "dependencies": {
+    "json-stringify-safe": "^5.0.1"
+  }
+}
