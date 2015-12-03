@@ -1,0 +1,6 @@
+0.9.1
+* Don't publish .babelrc to npm
+
+0.9.0
+* Initial release
+

@@ -1,6 +1,6 @@
 {
   "name": "yellowbox-react",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "YellowBox renders warnings at the bottom of the app being developed.",
   "main": "lib/index.js",
   "esnext:main": "index.js",
