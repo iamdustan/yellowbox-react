@@ -48,6 +48,32 @@ ReactDOM.render((
 ), document.getElemenById('app'));
 ```
 
+## Example Usage with React Blessed
+
+```
+import React from 'react';
+import ReactBlessed from 'react-blessed';
+import YellowBox from 'yellowbox-react/lib/blessed';
+import blessed from 'blessed';
+
+const screen = blessed.screen({
+  autoPadding: true,
+  smartCSR: true,
+  title: 'react-blessed yellowbox',
+});
+
+screen.key(['escape', 'q', 'C-c'], function(ch, key) {
+  return process.exit(0);
+});
+
+ReactBlessed.render((
+  <element>
+    <App />
+    <YellowBox />
+  </element>
+), screen));
+```
+
 ## License
 
 Copyright (c) 2015 Dustan Kasten | dustan.kasten@gmail.com
