@@ -1,12 +1,14 @@
 {
   "name": "yellowbox-react",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "YellowBox renders warnings at the bottom of the app being developed.",
   "main": "lib/index.js",
   "esnext:main": "index.js",
   "scripts": {
     "test": "flow",
-    "prepublish": "babel index.js -o lib/index.js"
+    "clean": "rm -rf lib",
+    "build": "babel src --out-dir lib && mv lib/index.blessed.js lib/blessed.js",
+    "prepublish": "npm run clean && npm run build"
   },
   "author": "Dustan Kasten <dustan.kasten@gmail.com>",
   "license": "MIT",
