@@ -57,6 +57,7 @@ const WarningInspector = ({
             <span style={styles.inspectorButtonText}>Dismiss</span>
           </button>
           <button
+            onClick={onDismissAll}
             style={styles.inspectorButton}>
             <span style={styles.inspectorButtonText}>
               Dismiss All
