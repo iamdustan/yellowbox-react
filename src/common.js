@@ -68,7 +68,7 @@ function updateWarningMap(format, ...args): void {
   const argCount = (format.match(/%s/g) || []).length;
   const warning = [
     sprintf(format, ...args.slice(0, argCount)),
-    ...args.slice(argCount).map(stringifySafe),
+    ...args.slice(argCount).map(arg => stringifySafe(arg)),
   ].join(' ');
 
   const count = _warningMap.has(warning) ? _warningMap.get(warning) : 0;
@@ -84,4 +84,3 @@ export function isWarningIgnored(warning: string): boolean {
     )
   );
 }
-
