@@ -19,6 +19,7 @@
     "babel-preset-react": "^6.1.18"
   },
   "dependencies": {
-    "json-stringify-safe": "^5.0.1"
+    "json-stringify-safe": "^5.0.1",
+    "prop-types": "^15.5.8"
   }
 }
