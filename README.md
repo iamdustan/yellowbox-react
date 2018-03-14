@@ -45,7 +45,7 @@ ReactDOM.render((
     <App />
     <YellowBox />
   </div>
-), document.getElemenById('app'));
+), document.getElementById('app'));
 ```
 
 ## Example Usage with React Blessed
