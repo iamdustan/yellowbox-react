@@ -111,7 +111,7 @@ class YellowBox extends Component {
   }
 
   componentWillUnmount() {
-    if (this._listener) {
+    if (this._listener && typeof this._listener.remove === 'function') {
       this._listener.remove();
     }
   }
